@@ -11,5 +11,14 @@
         "social-icons",
         "navigation-top",
         "boxed-header"
-    ]
+    ],
+	"header-conversions": {
+        "user-id": "80949722",
+        "site-id": "961261833831929926",
+        "page-types": {
+            "tall-header": "731938711859034276",
+            "short-header": "661705059316020012",
+            "landing": "593562939917783035"
+        }
+    }
 }

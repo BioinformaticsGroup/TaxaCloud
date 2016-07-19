@@ -25,7 +25,7 @@ jQuery(function($) {
       }
     });
   }
-  
+
   // Interval loop
   $.fn.intervalLoop = function(condition, action, duration, limit) {
     var counter = 0;
@@ -43,7 +43,7 @@ jQuery(function($) {
   $.fn.checkIfElementExists = function(selector) {
     return $(selector).length;
   }
-  
+
 
 	var centoController = {
 		init: function(opts) {
@@ -51,7 +51,7 @@ jQuery(function($) {
 
       // Check content positioning
       if($(window).width() > 767) {
-        $('.cento-header').checkNavPositioning($('body'), $('.nav-wrap'), 'affix');
+        $('.cento-header').checkNavPositioning($('body:not(.wsite-checkout-page)'), $('.nav-wrap'), 'affix');
       }
 
       // Add classes to elements
@@ -123,7 +123,7 @@ jQuery(function($) {
     _attachEvents: function() {
     	var base = this;
 
-        // Nav toggle 
+        // Nav toggle
         $('label.hamburger').on('click', function() {
             if(!$('body').hasClass('nav-open')) {
                 $('body').addClass('nav-open');
@@ -141,7 +141,7 @@ jQuery(function($) {
     	$(window).on('scroll', function(){
     		// Affix nav
         if($(window).width() > 767) {
-          $('.cento-header').checkNavPositioning($('body'), $('.nav-wrap'), 'affix');
+          $('.cento-header').checkNavPositioning($('body:not(.wsite-checkout-page)'), $('.nav-wrap'), 'affix');
         }
     	});
 

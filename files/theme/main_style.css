@@ -958,13 +958,17 @@ h2#wsite-com-product-title {
     background-attachment: inherit;
     font-size: 15px;
   }
+  /* Mobile editor + checkout */
+  body.wsite-checkout-page .banner-wrap,
   body.wsite-native-mobile-editor .banner-wrap {
     margin-top: 0;
   }
   /* Mobile app */
+  body.wsite-checkout-page .cento-header,
   body.wsite-native-mobile-editor .cento-header {
     position: relative !important;
   }
+  body.wsite-checkout-page .no-header-page .content-wrap,
   body.wsite-native-mobile-editor .no-header-page .content-wrap {
     margin-top: 0;
   }
@@ -1352,6 +1356,9 @@ h2#wsite-com-product-title {
   #wsite-com-store .wsite-com-sidebar.sidebar-expanded #wsite-com-hierarchy {
     max-height: 100vh;
     padding: 10px 0;
+  }
+  #wsite-com-store .wsite-com-content-with-sidebar {
+    margin-left: 0;
   }
   /* Product */
   div.wsite-product-image-wrap {
